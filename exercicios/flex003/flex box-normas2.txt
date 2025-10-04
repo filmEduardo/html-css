@@ -1,0 +1,14 @@
+flex-wrap (empacotamento ou encapsulamento)
+
+flex-wrap: nowrap; (padrão) /* não quebra. - PS: o encolhimento dos itens dentro do flexbox vai depender da capacidade do encolhimento dele. Se for um texto muito grande, ele vai ficar do tamanho da palavra mais longa. Se não der, ele quebra. O tamanho de um bloco vai depender do conteudo nele */
+
+flex-wrap: wrap; /* vai quebrar no sentido do eixo transversal (cross-axis) - de cima pra baixo - claro, nesse caso, relativo ao direction: row */
+
+flex-wrap: wrap-reverse; /* o oposto do eixo transversal - "de baixo pra cima" */
+
+*O wrap com o "flex: auto", vai quebrar até o limite do conteudo - se for um texto, se esse texto for quebrar pra baixo, ele automaticamente quebra o item e de maneira auto, nesse caso, sem espaços brancos 
+
+
+
+
+

@@ -1,0 +1,22 @@
+flex-direction:
+
+flex-direction: row; (padrão) /* linha deitada, da esquerda para direita */
+flex-direction: row-reverse;
+
+flex-direction: column; /* vertical, cima pra baixo */
+flex-direction: column-reverse;
+-------------------------------
+Eixos:
+
+[flex-direction: row;]
+
+main-axis (eixo principal):  esquerda pra direita (ponto incial e ponto final): main-start - main-end
+
+cross-axis (eixo transversal): cima pra baixo: cross-start - cross-end
+
+*
+[flex-direction: column;]
+
+main-axis: cima pra baixo
+
+cross-axis: esquerda pra direita 
