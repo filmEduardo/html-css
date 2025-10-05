@@ -1,0 +1,20 @@
+flexbox nos itens:
+------------------
+order: 0; (padrão) /* seleciona a ordem dos itens. Por exemplo, se eu chegar na div e colocar um style="order: -1;" ele vai ter a prioridade primeiro, assim por diante. A outra forma é colocar um id nas divs */
+
+-----------
+align-self
+
+/* vai funcionar diretamente no cross-axis - e sua altura/largura */
+
+align-self: auto; (padrão) /* vai herdar a caracteristica do alinhamento vertical do seu pai (align-content ou align-item) */
+
+align-self: flex-start; /* alinhamento perto/grudado do cross-start */
+
+align-self: flex-end; /* alinhamento perto/grudado do cross-end */
+
+align-self: center; /* vai calcular o meio entre o cross-star e o cross-end */
+
+align-self: stretch; /* vai puxar até que ocupe o espaço inteiro do eixo transversal (cross-axis) */
+
+

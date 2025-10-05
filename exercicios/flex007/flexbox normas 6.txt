@@ -1,0 +1,29 @@
+flexbox nos itens:
+------------------
+flex-basis:
+
+/* o tamanho dos itens */
+
+flex-basis: auto; (padrão) /* o tamanho do elemento em seu eixo principal é ditada através do tamanho do seu conteúdo. Se há um "a" como conteúdo em um elemento, e um "bbbbbbbbb" em outro elemento, esse outro elemento vai ser maior */
+
+flex-basis: 200px; (exemplo) /* é o tamanho dado ao elemento. O tamanho é terminado pelo tamanho do conteiner (pai) e, se diminuir o maximo que der, vai quebrar. Ou seja, nunca é uma medida certa, é uma medida certa se couber */
+
+-----------
+/* a alteração é referente ao main-axis (nowrap) */
+
+flex-shrink: 1; (padrão) /* 1: pode encolher, 0: não pode encolher - se dimuior com a configuração 0, vai dar overflow (vazamento) */
+
+flex-grow: 0; (padrão) /* 0: não pode aumentar, 1: pode aumentar - se aumentar com a configuração 1, vai dar "stretch" (esticar). PS: se usar o "grow: 1;" em um "wrap", o conteudo que vai quebrar para "baixo" (por exemplo) vai ficar esticado */
+
+*flex-grow: 2; /* vai crescer dependendo da proporção (referência). Por exemplo, se tinho três elementos: um vai tar com o valor de 0, o outro com 1 e o ultimo com 2 - o ultimo vai crescer o dobro do com o valor de 1, assim por diante. Dois com "grow: 2;" vão crescer com a mesma proporção */
+
+*flex-shrink: 2 /* o mesmo para o grow: 2; só que o contrario, quando for encolher/diminuir */
+
+------------
+Podem (e é recomendado) ser simplificadas com a propriedade "flex" /* sendo o "flex: initial;" o padrão (0 1 auto;), e, por exmplo, o "flex: 3;" sendo referente apenas o "grow," tendo os outros valores padronizados (...1 auto;) */
+
+flex: 0 1 150px; (exemplo) /* que significa: flex-grow: 0; flex-shrink: 1; flex-basis: 150px; */
+
+flex: none; /* flex não flexivel, ou seja, com os valores: "0 0 auto;" */
+
+flex: auto: /* flexivel, ou seja, com os valores "1 1 auto" */
