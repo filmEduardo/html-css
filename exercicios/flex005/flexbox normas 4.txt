@@ -1,0 +1,17 @@
+align-content
+
+/* vai fazer o alinhamento dos elementos no eixo transversal (cross-axis) mas quando eles estão empacotados (wrap) */
+
+align-content: stretch; (padrão) /* vai pegar a dimensão inteira, por exemplo, a altura (numero de linhas /ou numeros de colunas, se estiver trabalhando com colunas), e vai dividir em duas partes iguais (se quebrar para três linhas, três partes iguais, assim sucessivamente) e vai pegar a dimensão do cross-axis de todos os itens e puxar pra baixo, por exemplo (dependendo da direção que trabalhar).*/
+
+align-content: flex-start; /* vai pegar todos os elementos e grudar no cross-start, e reservar o espaço de baixo para colocar o espaço em branco */
+
+align-content: flex-end; /* vai pegar todos os elementos e grudar no cross-end - com o elemento extra grudado no cross-end -, o espaço em branco, proximo ao cross-start */
+
+align-content: center; /* os espaços em branco vão ser distribuidos de forma igual pro cross-start e o cross-end, os itens vão ser centralizados */
+
+align-content: space-between; /* os primeiros elementos, perto do cross-start, os ultimos elementos, perto do cross-end, o espaço no meio vai dividir com os outros elementos que por ventura venham existir */
+
+align-content: space-evenly; /* um espaço no cross-start, um espaço no cross-end, e entre esses elementos, exatamente o mesmo espaço */
+
+align-content: space-around; /* vai dividir os espaços no conteiner em pedaços iguais, e irá centralizar os itens dentro desses espaços */

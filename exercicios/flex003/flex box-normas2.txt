@@ -4,7 +4,7 @@ flex-wrap: nowrap; (padrão) /* não quebra. - PS: o encolhimento dos itens dent
 
 flex-wrap: wrap; /* vai quebrar no sentido do eixo transversal (cross-axis) - de cima pra baixo - claro, nesse caso, relativo ao direction: row */
 
-flex-wrap: wrap-reverse; /* o oposto do eixo transversal - "de baixo pra cima" */
+flex-wrap: wrap-reverse; /* o oposto do eixo transversal - "de baixo pra cima" no contexto do direction: row */
 
 *O wrap com o "flex: auto", vai quebrar até o limite do conteudo - se for um texto, se esse texto for quebrar pra baixo, ele automaticamente quebra o item e de maneira auto, nesse caso, sem espaços brancos 
 

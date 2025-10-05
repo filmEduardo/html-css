@@ -1,0 +1,28 @@
+justify-content
+
+/* vai fazer o alinhamento dos elementos em relação ao main-axis */
+
+justify-content: flex-start; (padrão) /* o primeiro item vai começar /ou ficar grudado no main-start, e espaço em branco vai ser jogado pro final, no main-end */
+
+justify-content: flex-end; /* o contrario: o ultimo item vai grudar no main-end, e o espaço em branco vai ser jogado para o main-start */
+
+justify-content: center; /* os espaços em branco vão ser distribuidos de forma igual pro main-start e o main-end, os itens vão ser centralizados */
+
+justify-content: space-between; /* o primeiro item no main-start e o ultimo item no main-end, todos os outros itens vão estar no meio com espaçamento igual entre eles */
+
+justify-content: space-evenly; /* antes e depois do intem nos temos espaçamentos iguais, o primeiro e o ultimo não vão estar grudados nas extremidades */
+
+justify-content: space-around; /* vai dividir os espaços no conteiner em pedaços iguais, e irá centralizar os itens dentro desses espaços */
+
+----------------------
+align-items
+
+/* vai fazer alinhamento dos elementos em relação ao cross-axis. Para alinhar no cross-axis, é necessario aumentar a altura do conteiner (direction: row) */
+
+align-items: stretch; (padrão) /* se vc aumentar o cross-axis, ele irá esticar os elementos/itens */
+
+align-items: flex-start; /* vai fazer (ao aumentar o cross-axis) os elementos grudar no inicio do cross-start. O espaço em branco vai ficar embaixo */
+
+align-items: flex-start; /* o contrario: os elementos vão grudar no final do cross-axis (o cross-end). O espaço em branco vai ficar em cima*/
+
+align-items: center; /* os espaços em branco vão ser distribuidos de forma igual pro cross-start e o cross-end, os itens vão ser centralizados */
