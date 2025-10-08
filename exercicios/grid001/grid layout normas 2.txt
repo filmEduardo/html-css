@@ -1,0 +1,49 @@
+Propriedades de container do Grid Layout
+
+grid-template-columnns: / grid-template-rows: /* Divide os conteudos do conteiner em coluans e fileira */
+
+*ALIGN = vertical, JUSTIFY = horizontal; ITEMS = conteúdo, CONTENT = conjunto do conteúdo (para exemplos, o container vai aumentar)
+-------------
+align-items: stretch; (padrão) /* Estica o conteúdo */
+
+align-items: start; /* Vai pegar os intens e colocar em cima, no inicio da linha da grade */
+
+align-items: center; /* Vai centralizar verticalmente o item na grade */
+
+align-items: end; /* Vai alinhar na parte de baixo da linha da grade */
+--------------
+justify-items: stretch; (padrão)
+
+justify-items: start; /* Vai alinhar pra esquerda da grade */
+
+justify-items: center; /* Vai centralizar horizontalmente */
+
+justify-items: end; /* Vai colar na direita da grade */
+--------------
+align-content: stretch; (padrão)
+
+align-content: start; /* Vai colcar todo o conteúdo no start, na parte de cima */
+
+align-content: center; /* vai centralizar */
+
+align-content: end; /* vai colar na parte de baixo do conteiner */
+
+align-content: space-between; /* vai pegar os itens da primeira fileira e colar em cima, da ultima vai colar em baixo, e o espaço entre eles vão ser distribuidos igualmente */
+
+align-content: space-envely; /* o espaço acima, abaixo e entre os itens vai ser o mesmo */
+
+align-content: space-around; /* vai centralizar os intens em que o espaço ao redor dos intens sejam equivalentes/iguais */
+---------------
+justify-content: stretch; (padrão)
+
+justify-content: start; /* vai colar na esquerda */
+
+justify-content: center; /* vai centralizar horizontalmente */
+
+justify-content: end; /* vai colar na direita */
+
+justify-content: space-between;
+
+justify-content: space-envely;
+
+justify-content: space-around;

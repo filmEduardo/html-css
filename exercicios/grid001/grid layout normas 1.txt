@@ -1,0 +1,21 @@
+"CSS Grid Layout é um sistema para criação de layout baseado em uma grade bidimensional e otimizado para design de interfaces de usuário. Nesse modelo de grade, os elementos-filhos (itens) do conteiner que defina a grade podem ser posicionados livremente em espaços criados na estrutura, quer ela tenha sido definida com suas dimensões flexíveis ou fixas"
+
+Anatomia de um Grid:
+
+grid container: /* Uma caixa que vai conter varios itens. O pai */
+
+grid item: /* A junção das grades; as interseções desse elementos de grade */
+
+grid track: /* Quando tem varios itens na mesma linha, que vão do início da grade até o final, tanto horizontal quanto vertical */
+
+row trak: /* Uma trak deitada: horizontal */
+
+colunm trak: /* Uma trak em pé: vertical */
+
+grid lines: /* As linhas entre os elementos. As verticais são contadas da esquerda pra direita, as horizontais de cima pra baixo.
+PS: as linhas podem ser contadas com numero negativos, ou seja, se eu tenho um conteiner com sete linhas, a setima para a contagem negativa será -1, e assim decrescentemente vai caindo até a primeira (com o valor de 1) que será numerada como -7, nesse exemplo. Ou seja, as linhas tem dois endereços */
+
+grid area: /* Um conjunto de itens tratado como um agrupamento */
+
+gap: /* Um espaço entre os itens - sem alterar o tamanho do elemento/item */
+
