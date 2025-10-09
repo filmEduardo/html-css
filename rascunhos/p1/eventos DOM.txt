@@ -1,0 +1,6 @@
+mauseenter
+mousemove
+mousedown
+mouseup
+click
+mouseout

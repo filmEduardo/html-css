@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            font: normal 20px arial;
+            color: white;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()">
+        interaja
+    </div>
+    <script>
+        let a = document.querySelector('div#area')
+        //exemplo de evento disparando pelo JS:
+        a.addEventListener('mouseout', sair)
+        function clicar() {
+            a.innerHTML = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerHTML = 'Entrou!'
+        }
+        function sair() {
+            a.innerHTML = 'Saiu'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
