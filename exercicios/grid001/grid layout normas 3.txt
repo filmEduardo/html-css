@@ -1,0 +1,19 @@
+"o grid explicito é o q foi declarado - e quando ultrapassa não dá erro, ele sempre vai acrescentando, isso se chama grid implicito"
+
+grid-auto-row & grid-auto-columns: 100px (ex) /* são propriedades para quando a gente for criar celulas que estão "fora do grid": dentro do grid implicito. são configurações de celulas para grids implicitos */
+---------------------------
+FRAÇÃO
+
+"use 1fr ao invés de auto. exemplo:"
+
+/* Imagine q um container está com 1500x de largura */
+
+grid-template-columns: 1fr 1fr 1fr; /* significa q ele vai somar o numero de fração (1+1+1 = 3), vai pegar a largura inteira do container e vai dividir em 3 vezes iguais - sendo o resultado aqui, 500px cada um */
+
+/* A grande diferença aqui da fração para o auto, é q, se eu quiser q "a" e "c" tenha o mesmo tamanho, e q "b" tenha duas vezes o tamanho de "a" e "c", é só colocar assim: */
+
+grid-template-columns: 1fr 2fr 1fr;
+
+/* Um outro exemplo usando medidas mistas: */
+
+grid-template-columns: 100px 20% 1fr 1fr; /* a primeira coluna vai ter 100px normalmente; a segunda coluna vai ter os 20% de 1500px - resultando em 300px; e as duas fração q vão ser feitas, n é a fração do total (1500), mas no q sobrou, neste caso: 100 + 300 - 1500 = 1100; 1100 dividido por 2: duas fração de 550px */
