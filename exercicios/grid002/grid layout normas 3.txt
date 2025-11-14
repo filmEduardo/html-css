@@ -1,0 +1,3 @@
+"o grid explicito é o q foi declarado - e quando ultrapassa não dá erro, ele sempre vai acrescentando, isso se chama grid implicito"
+
+grid-auto-row & grid-auto-columns: 100px (ex) /* são propriedades para quando a gente for criar celulas que estão "fora do grid": dentro do grid implicito. são configurações de celulas para grids implicitos */

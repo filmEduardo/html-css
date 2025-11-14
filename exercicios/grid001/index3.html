@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na prática</title>
+    <style>
+        div.container {
+            border: 2px solid blue;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 100px 100px;
+            
+            /*para corrigir o grid implicito (uma altura automatica de 100 por exemplo):*/
+            grid-auto-rows: 100px;
+            /*o mesmo vale para colunas novas - não pode colocar o "auto"*/
+            grid-auto-columns: 100px;
+        }
+        div.item {
+            border: 2px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div> <!--grid implicito - não foi definido ainda, visto q o grid explicito está determinado por 3 colunas (auto auto auto) e 3 linhas (100px 100px 100px) o q só caberia 9 itens, de A à I-->
+    </div>
+</body>
+</html>
