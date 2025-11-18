@@ -1,1 +1,25 @@
 Propriedades para itens do grid layout
+
+"span" /* Expansão. Do 1, para chegar no 4, expande 3 */
+
+exempo (padrão):
+grid-row-start: 1;
+grid-column-start: 1;
+grid-row-end: 4;
+grid-column-end: 3;
+--
+exemplo(span)
+grid-row-start: 1;
+grid-column-start: 1;
+grid-row-end: span 3;
+grid-column-end: span 2;
+
+"Simplicação" /* quando há apenas um valor, é quando n tem span (expansão). O valor auto, que é ocupar somente uma coluna (2) */
+grid-row: 1 / 4;   ou 1 / span 3;
+grid-column: 1 / 3;  ou 1 / span 2;
+
+"Simplficação Máxima" /* ordem: grid-row-start > grid-column-start > grid-row-end > grid-column-end */
+grid-area: 1 / 1 / 4 / 3;
+
+
+
