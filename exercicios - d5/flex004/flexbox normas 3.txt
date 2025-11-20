@@ -23,6 +23,6 @@ align-items: stretch; (padrão) /* se vc aumentar o cross-axis, ele irá esticar
 
 align-items: flex-start; /* vai fazer (ao aumentar o cross-axis) os elementos grudar no inicio do cross-start. O espaço em branco vai ficar embaixo */
 
-align-items: flex-start; /* o contrario: os elementos vão grudar no final do cross-axis (o cross-end). O espaço em branco vai ficar em cima*/
+align-items: flex-endt; /* o contrario: os elementos vão grudar no final do cross-axis (o cross-end). O espaço em branco vai ficar em cima*/
 
 align-items: center; /* os espaços em branco vão ser distribuidos de forma igual pro cross-start e o cross-end, os itens vão ser centralizados */
